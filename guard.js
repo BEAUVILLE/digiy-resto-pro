@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <title>DIGIY RESTO PRO — Entrée</title>
+</head>
+<body>
+<script>
+  const u = new URL(location.href);
+  const slug = u.searchParams.get("slug");
+  location.href = "./pin.html" + (slug ? ("?slug="+encodeURIComponent(slug)) : "");
+</script>
+</body>
+</html>
